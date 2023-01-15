@@ -4,7 +4,7 @@ use std::fs::File;
 use std::path::Path;
 
 pub struct ConfigFile {
-    path: String,
+    pub path: String,
 }
 
 pub trait FileActions {
@@ -15,7 +15,7 @@ pub trait FileActions {
 }
 
 pub struct ConfigDir {
-    path: String,
+    pub path: String,
 }
 
 pub trait DirActions {
